@@ -34,6 +34,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@netlify/remix-adapter": "^2.6.0",
     "@remix-run/dev": "^2.16.0",
     "@storybook/react-vite": "^8.6.4",
     "@testing-library/dom": "^10.4.0",
@@ -52,6 +53,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jsdom": "^26.0.0",
+    "netlify-cli": "^19.0.2",
     "postcss": "^8.4.38",
     "storybook": "^8.6.4",
     "storybook-addon-remix-react-router": "^4.0.1",

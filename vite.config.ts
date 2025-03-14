@@ -1,5 +1,6 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 import { defineConfig } from "vite";
+import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 declare module "@remix-run/node" {
@@ -20,5 +21,6 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
+    netlifyPlugin(),
   ],
 });
