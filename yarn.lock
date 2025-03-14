@@ -9164,12 +9164,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@workspace:applications/storybook":
-  version: 0.0.0-use.local
-  resolution: "storybook@workspace:applications/storybook"
-  languageName: unknown
-  linkType: soft
-
 "stream-shift@npm:^1.0.0":
   version: 1.0.3
   resolution: "stream-shift@npm:1.0.3"
