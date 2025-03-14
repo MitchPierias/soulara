@@ -1,0 +1,12 @@
+.frame {
+    border-radius: 100vw;
+    transition: border-radius 600ms ease-in-out;
+    padding: 0 1.6rem;
+    outline: 1px solid #5C6E4A;
+    border: none;
+
+    &:focus-within,
+    &:hover {
+        border-radius: 8px;
+    }
+}

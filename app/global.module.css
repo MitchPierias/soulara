@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Silka Bold';
+    src: url('https://cdn.shopify.com/s/files/1/0783/6568/8095/files/silka-bold-webfont.woff?v=1700911174') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0783/6568/8095/files/silka-bold-webfont.ttf?v=1700911174') format('truetype');
+}
+
+@font-face {
+    font-family: 'Silka Regular';
+    src: url('https://cdn.shopify.com/s/files/1/0783/6568/8095/files/silka-regular-webfont.woff?v=1700911174') format('woff'),
+        url('https://cdn.shopify.com/s/files/1/0783/6568/8095/files/silka-regular-webfont.ttf?v=1700911174') format('truetype');
+}
+
+:root {
+    background-color: rgb(255, 255, 245);
+
+    --primary: #057A74;
+    --secondary: #F2FF69;
+}
+
+* {
+    font-family: 'Silka Regular';
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Silka Bold';
+    color: rgb(var(--color-foreground));
+    color: rgb(40, 40, 36);
+    font-size: calc(var(--font-heading-scale)* 4rem);
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 22px;
+}

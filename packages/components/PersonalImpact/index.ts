@@ -1,0 +1,1 @@
+export { PersonalImpact } from "./PersonalImpact";

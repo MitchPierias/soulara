@@ -1,0 +1,72 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFFE6;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.6rem;
+}
+
+.header {
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 0.96rem;
+}
+
+.section {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: [full-start] 1fr [gutter-start] minmax(21px, 200px) [content-start] minmax(240px, 1350px) [content-end] minmax(21px, 200px) [gutter-end] 1fr [full-end]; */
+    /* grid-auto-flow: row; */
+    /* grid-auto-rows: auto; */
+    padding: 16px;
+
+    h2,
+    p {
+        grid-column: content;
+        width: 100%;
+        max-width: 960px;
+        margin: auto;
+    }
+
+    p {
+        /* grid-column-end: content; */
+        text-align: left;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+    }
+
+    &:hover p {
+        max-height: 150px;
+        opacity: 1;
+    }
+
+    &:nth-last-of-type(4) {
+        color: #3D9445;
+        background-color: transparent;
+    }
+
+    &:nth-last-of-type(3) {
+        color: #FBFFE6;
+        background-color: #7DC245;
+    }
+
+    &:nth-last-of-type(2) {
+        color: #FBFFE6;
+        background-color: #3D9445;
+    }
+
+    &:nth-last-of-type(1) {
+        color: #FBFFE6;
+        background-color: #1C6611;
+    }
+}

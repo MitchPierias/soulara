@@ -1,0 +1,11 @@
+.frame {
+    background-color: var(--secondary);
+    padding: 1.6rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.98rem;
+}

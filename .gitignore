@@ -1,0 +1,15 @@
+# Node
+node_modules
+
+# Distributions
+/.cache
+/build
+
+# Yarn
+.yarn/cache
+
+# Secrets
+.env
+
+# Coverage
+/coverage
