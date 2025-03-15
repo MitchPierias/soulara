@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Silka Bold';
+    src: url('../fonts/silka-bold-webfont.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka Medium';
+    src: url('../fonts/silka-medium-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Silka Regular';
+    src: url('../fonts/silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    background-color: rgb(255, 255, 245);
+
+    --primary: #057A74;
+    --secondary: #F2FF69;
+}
+
+* {
+    font-family: 'Silka Regular';
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Silka Bold';
+    color: rgb(var(--color-foreground));
+    color: rgb(40, 40, 36);
+    font-size: calc(var(--font-heading-scale)* 4rem);
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 22px;
+}
