@@ -5,6 +5,7 @@ import clsx from "classnames";
 interface ButtonProps
   extends Common.ComponentProps,
     React.ButtonHTMLAttributes<HTMLButtonElement> {
+  label?: string;
   variant?: Common.Variants;
   disabled?: boolean;
 }
@@ -24,6 +25,8 @@ export const Button = forwardRef<
         styles[variant],
         props.disabled && styles.disabled
       )}
-    />
+    >
+      {props.label || props.children}
+    </button>
   );
 });

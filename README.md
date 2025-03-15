@@ -1,13 +1,41 @@
-# Welcome to Remix!
+# Soulara Test
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Setup
+
+[Install Node version manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) if you haven't already and make sure you're running the expected version of node
+
+```sh
+nvm use
+```
+
+Then install the required dependencies using yarn
+
+```sh
+yarn install
+```
 
 ## Development
 
-Run the dev server:
+Running the development server locally.
 
-```shellscript
-npm run dev
+```sh
+yarn dev
+```
+
+Alternatively, you can develop components in isolation with additional developer tools using Storybook.
+
+```sh
+yarn storybook
+```
+
+This is especially useful when developing components that require specialized state, context or are behind a specific flow, like authentication.
+
+## Testing
+
+Test files are defined with the `*.test.*` naming convention and can be run using Vitest using
+
+```sh
+yarn test
 ```
 
 ## Deployment
@@ -15,22 +43,25 @@ npm run dev
 First, build your app for production:
 
 ```sh
-npm run build
+yarn build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+yarn start
 ```
 
-Now you'll need to pick a host to deploy it to.
+If everything behaves as expected, you're ready to deploy.
 
-### DIY
+```sh
+yarn deploy
+```
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+Or deploy to production with
 
-Make sure to deploy the output of `npm run build`
+```sh
+yarn deploy:prod
+```
 
-- `build/server`
-- `build/client`
+Normally this would be handled by continuous delivery pipelines, but these haven't been configured for this project.

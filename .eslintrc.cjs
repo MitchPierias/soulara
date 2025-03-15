@@ -4,6 +4,8 @@
  * and should modify this configuration to best suit your team's needs.
  */
 
+const { rules } = require('eslint-plugin-react');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -35,6 +37,9 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
       ],
+      rules: {
+        "react/display-name": "off",
+      },
       settings: {
         react: {
           version: "detect",

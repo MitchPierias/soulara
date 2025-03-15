@@ -5,8 +5,7 @@ import { mergeConfig } from "vite";
 const getAbsolutePath = (value) =>
   dirname(require.resolve(join(value, "package.json")));
 
-const getProjectPath = (...args: string[]) =>
-  join(process.cwd(), "../..", ...args);
+const getProjectPath = (...args: string[]) => join(process.cwd(), ...args);
 
 const config: StorybookConfig = {
   stories: [
@@ -20,11 +19,15 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-a11y"),
     // getAbsolutePath("@chromatic-com/storybook"),
     getAbsolutePath("@storybook/addon-interactions"),
-    getAbsolutePath("storybook-addon-remix-react-router"),
+    // getAbsolutePath("storybook-addon-remix-react-router"),
   ],
   framework: {
     name: "@storybook/react-vite",
-    options: {},
+    options: {
+      builder: {
+        viteConfigPath: ".storybook/sb-vite.config.ts",
+      },
+    },
   },
   viteFinal: async (config) => {
     return mergeConfig(config, {

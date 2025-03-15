@@ -3,7 +3,7 @@ import styles from "./Newsletter.module.css";
 
 interface NewsletterProps extends Common.ComponentProps {}
 
-export const Newsletter = ({ testID, ...props }: NewsletterProps) => {
+export const Newsletter = ({ testID }: NewsletterProps) => {
   return (
     <div data-testid={testID} className={styles.frame}>
       <h1 data-testid={`${testID}.title`} className={styles.title}>
